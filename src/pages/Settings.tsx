@@ -1,25 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {
-  User,
-  Bell,
-  Palette,
-  Shield,
-  Code,
-  Globe,
-  Moon,
-  Sun,
-  Monitor,
-  Check,
-  Eye,
-  Grid,
-  List,
-  Slack,
-  Mail,
-  Webhook,
-  Save,
-  RefreshCw,
-} from 'lucide-react'
+import { User, Bell, Palette, Shield, Code, Globe, Moon, Sun, Monitor, Check, Eye, Grid2x2 as Grid, List, Slack, Mail, Webhook, Save, RefreshCw } from 'lucide-react'
 import { supabase, type UserSettings } from '../lib/supabase'
 import { useAuth } from '../hooks/useAuth'
 import Header from '../components/Layout/Header'
