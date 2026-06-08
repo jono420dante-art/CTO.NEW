@@ -3,10 +3,15 @@ import { AuthProvider, useAuth } from './hooks/useAuth'
 import Auth from './components/Auth'
 import Layout from './components/Layout/Layout'
 import Dashboard from './pages/Dashboard'
+import Leads from './pages/Leads'
+import Demos from './pages/Demos'
+import Outreach from './pages/Outreach'
+import Deals from './pages/Deals'
 import Agents from './pages/Agents'
 import Tasks from './pages/Tasks'
 import Analytics from './pages/Analytics'
 import Settings from './pages/Settings'
+import AgencySettings from './pages/AgencySettings'
 import Notifications from './pages/Notifications'
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
@@ -45,10 +50,15 @@ function AppRoutes() {
         }
       >
         <Route index element={<Dashboard />} />
+        <Route path="leads" element={<Leads />} />
+        <Route path="demos" element={<Demos />} />
+        <Route path="outreach" element={<Outreach />} />
+        <Route path="deals" element={<Deals />} />
         <Route path="agents" element={<Agents />} />
         <Route path="tasks" element={<Tasks />} />
         <Route path="analytics" element={<Analytics />} />
         <Route path="settings" element={<Settings />} />
+        <Route path="agency-settings" element={<AgencySettings />} />
         <Route path="notifications" element={<Notifications />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />

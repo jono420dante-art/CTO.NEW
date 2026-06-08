@@ -11,11 +11,19 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
+  Target,
+  Globe,
+  Mail,
+  DollarSign,
 } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth'
 
 const navItems = [
   { icon: LayoutDashboard, label: 'Dashboard', path: '/' },
+  { icon: Target, label: 'Leads', path: '/leads' },
+  { icon: Globe, label: 'Demos', path: '/demos' },
+  { icon: Mail, label: 'Outreach', path: '/outreach' },
+  { icon: DollarSign, label: 'Deals', path: '/deals' },
   { icon: Bot, label: 'Agents', path: '/agents' },
   { icon: ListTodo, label: 'Tasks', path: '/tasks' },
   { icon: BarChart3, label: 'Analytics', path: '/analytics' },

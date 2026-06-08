@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 import {
-  Bot,
-  ListTodo,
   Activity,
   TrendingUp,
-  Clock,
   CheckCircle2,
   XCircle,
   ArrowUpRight,
   ArrowDownRight,
+  Target,
+  Globe,
+  DollarSign,
 } from 'lucide-react'
 import {
   AreaChart,
@@ -53,36 +53,36 @@ const taskDistribution = [
 
 const metrics = [
   {
-    label: 'Total Agents',
-    value: '57',
+    label: 'Active Leads',
+    value: '24',
+    change: '+12',
+    changeType: 'positive',
+    icon: Target,
+    color: 'from-blue-500 to-blue-600',
+  },
+  {
+    label: 'Demos Generated',
+    value: '18',
     change: '+8',
     changeType: 'positive',
-    icon: Bot,
-    color: 'from-primary-500 to-blue-600',
+    icon: Globe,
+    color: 'from-purple-500 to-purple-600',
   },
   {
-    label: 'Active Tasks',
-    value: '182',
-    change: '+23%',
+    label: 'Revenue',
+    value: '$12.4k',
+    change: '+$3.2k',
     changeType: 'positive',
-    icon: ListTodo,
-    color: 'from-accent-500 to-teal-600',
+    icon: DollarSign,
+    color: 'from-green-500 to-emerald-600',
   },
   {
-    label: 'Success Rate',
-    value: '94.2%',
-    change: '+2.1%',
+    label: 'Win Rate',
+    value: '34%',
+    change: '+5%',
     changeType: 'positive',
     icon: TrendingUp,
-    color: 'from-success-500 to-emerald-600',
-  },
-  {
-    label: 'Avg. Completion',
-    value: '4.2m',
-    change: '-18%',
-    changeType: 'positive',
-    icon: Clock,
-    color: 'from-warning-500 to-amber-600',
+    color: 'from-amber-500 to-orange-600',
   },
 ]
 
